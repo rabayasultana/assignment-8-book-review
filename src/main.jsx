@@ -19,6 +19,11 @@ const router = createBrowserRouter([
         element: <Home></Home>,
         loader: () => fetch('/fakeData.json')
       },
+      {
+        path: '/listedBooks',
+        element: <ListedBooks></ListedBooks>
+
+      },
     ]
   },
 ]);

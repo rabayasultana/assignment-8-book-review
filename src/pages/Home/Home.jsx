@@ -6,9 +6,9 @@ const Home = () => {
     // console.log(books);
   return (
     <div>
-      <section className="bg-gray-800 dark:bg-gray-100 bg-gray-800 dark:bg-gray-100 text-gray-100 dark:text-gray-800 text-gray-100 dark:text-gray-800 mx-20 mt-8 rounded-lg">
-        <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
-          <div className="hero  bg-base-200 ">
+      <section className=" bg-gray-100 text-gray-800  mx-20 mt-8 rounded-lg">
+        <div className="container p-6 mx-auto space-y-6 sm:space-y-12">
+          <div className="hero ">
             <div className="hero-content flex-col lg:flex-row-reverse  lg:py-5  ">
               <img
                 src={books[0].image}
