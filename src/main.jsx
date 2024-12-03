@@ -9,6 +9,8 @@ import {
 import Layout from './layouts/Layout';
 import Home from './pages/Home/Home';
 import ListedBooks from './pages/ListedBooks/ListedBooks';
+import BookDetails from './pages/BookDetails/BookDetails';
+import WishListBook from './pages/WishListBook/WishListBook';
 
 const router = createBrowserRouter([
   {
@@ -21,9 +23,25 @@ const router = createBrowserRouter([
         loader: () => fetch('/fakeData.json')
       },
       {
+        path: `/book/:id`,
+        element: <BookDetails></BookDetails>,
+        loader: async ({ params }) => {
+          const response = await fetch(`/fakeData.json`);
+          const data = await response.json();
+          const book = data.find(item => item.bookId === Number(params.id));
+          return book;
+        }
+      },
+      {
         path: '/listedBooks',
         element: <ListedBooks></ListedBooks>
 
+      },
+
+        
+      {
+        path: '/wishlist',
+        element: <WishListBook></WishListBook>
       },
     ]
   },

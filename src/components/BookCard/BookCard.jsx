@@ -6,7 +6,7 @@ const BookCard = ({ book }) => {
     <div className="transition border-2 border-primary  rounded-lg   border-opacity-30 p-5">
       <Link
         to={`/book/${bookId}`}
-        className="max-w-sm mx-auto group  hover:no-underline focus:no-underline bg-gray-900 dark:bg-gray-50 bg-gray-900 dark:bg-gray-50"
+        className="max-w-sm mx-auto group  hover:no-underline focus:no-underline bg-gray-900 dark:bg-gray-50 "
       >
         <div className=" bg-gray-100 flex justify-center rounded-lg ">
           <img

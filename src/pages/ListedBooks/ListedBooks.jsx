@@ -26,12 +26,7 @@ const ListedBooks = () => {
                     <ReadBook key={data.bookId} data={data}></ReadBook>
                 ))
 
-                
-
-
             }
-            
-
 
         </div>
     );
