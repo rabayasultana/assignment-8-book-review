@@ -90,7 +90,7 @@ const Navbar = () => {
               Listed Books
             </NavLink>
             <NavLink
-              to="/pageToRead"
+              to="/pagesToRead"
               className={({ isActive }) =>
                 isActive &&
                 " text-green-500 border border-green-500 rounded-md py-2 px-4"
