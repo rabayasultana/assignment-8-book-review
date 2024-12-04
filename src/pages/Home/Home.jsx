@@ -7,7 +7,7 @@ const Home = () => {
     // console.log(books);
   return (
     <div>
-      <Banner image={books[0].image}></Banner>
+      <Banner image={books[2].image}></Banner>
       <Books books={books}></Books>
     </div>
   );
