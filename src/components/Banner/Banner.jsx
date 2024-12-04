@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 
 const Banner = ({ image }) => {
@@ -30,5 +31,7 @@ const Banner = ({ image }) => {
         </div>
     );
 };
-
+Banner.propTypes = {
+    image: PropTypes.string.isRequired,
+};
 export default Banner;
