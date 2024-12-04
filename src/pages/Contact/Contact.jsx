@@ -9,7 +9,7 @@ const Contact = () => {
         <div>
           <p className="flex items-center mb-4 justify-center text-2xl">
             <FaEnvelope className="mr-4 text-xl text-blue-500" />
-            <span>info@wanderlustcollective.com</span>
+            <span>info@readandreflect.com</span>
           </p>
           <p className="flex items-center mb-4  justify-center text-2xl">
             <FaPhoneAlt className="mr-4 text-xl text-blue-500" />

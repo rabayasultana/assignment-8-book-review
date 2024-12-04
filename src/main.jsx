@@ -12,6 +12,8 @@ import ListedBooks from './pages/ListedBooks/ListedBooks';
 import BookDetails from './pages/BookDetails/BookDetails';
 import PagesToRead from './pages/PagesToRead/PagesToRead';
 import NotFound from './pages/NotFound/NotFound';
+import Contact from './pages/Contact/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 
 const router = createBrowserRouter([
   {
@@ -47,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact></Contact>
+      },
+      {
+        path: "/privacy",
+        element: <PrivacyPolicy></PrivacyPolicy>
       },
       
     ]
