@@ -98,7 +98,6 @@ const Navbar = () => {
             >
               Pages to Read
             </NavLink>
-            {/* <NavLink to='/bookDetails' className={({ isActive }) => isActive && ' text-green-500 border border-green-500 rounded-md py-2 px-4'}>Book Details</NavLink> */}
             <NavLink
               to="/contact"
               className={({ isActive }) =>
@@ -109,13 +108,13 @@ const Navbar = () => {
               Contact Us
             </NavLink>
             <NavLink
-              to="/faq"
+              to="/privacy"
               className={({ isActive }) =>
                 isActive &&
                 " text-green-500 border border-green-500 rounded-md py-2 px-4"
               }
             >
-              FAQ
+              Privacy Policy
             </NavLink>
           </ul>
         </div>
