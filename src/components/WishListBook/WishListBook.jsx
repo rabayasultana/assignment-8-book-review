@@ -1,20 +1,9 @@
 import { Link } from "react-router-dom";
 
-const WishListBook = (item) => {
-  console.log("wishlist data", item);
+const WishListBook = (data) => {
+  console.log("wishlist data", data);
 
-  const {
-    image,
-    bookName,
-    author,
-    category,
-    tags,
-    totalPages,
-    publisher,
-    yearOfPublishing,
-    rating,
-    bookId,
-  } = item;
+  const { image, bookName, author, category, tags, totalPages, publisher, yearOfPublishing, rating, bookId } = data.data;
   return (
     <div>
       <div className="hero border mb-6 rounded-lg    lg:grid lg:justify-items-start ">
@@ -27,8 +16,8 @@ const WishListBook = (item) => {
             <p className=" text-xs  font-semibold my-3">By : {author}</p>
             <div className="flex text-xs gap-4 items-center">
               <p className=" font-bold">Tag</p>
-              {/* <p className=" bg-gray-100 text-[#23BE0A] rounded-full px-2 py-1">{tags[0]}</p> */}
-              {/* <p className=" bg-gray-100 text-[#23BE0A] rounded-full px-2 py-1">{tags[1]}</p> */}
+              <p className=" bg-gray-100 text-[#23BE0A] rounded-full px-2 py-1">{tags[0]}</p>
+              <p className=" bg-gray-100 text-[#23BE0A] rounded-full px-2 py-1">{tags[1]}</p>
 
               <p className="flex">
                 <svg

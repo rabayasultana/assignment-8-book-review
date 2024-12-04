@@ -10,7 +10,7 @@ import Layout from './layouts/Layout';
 import Home from './pages/Home/Home';
 import ListedBooks from './pages/ListedBooks/ListedBooks';
 import BookDetails from './pages/BookDetails/BookDetails';
-import WishListBook from './pages/WishListBook/WishListBook';
+import WishListBook from './components/WishListBook/WishListBook';
 
 const router = createBrowserRouter([
   {

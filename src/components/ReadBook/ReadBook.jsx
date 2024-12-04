@@ -13,6 +13,7 @@ const ReadBook = (data) => {
     rating,
     bookId,
   } = data.data;
+//   console.log(data.data);
   return (
     <div>
       <div className="hero border mb-6 rounded-lg    lg:grid lg:justify-items-start ">
